@@ -7,8 +7,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Add pod ReactiveCocoa 
-
 ## Installation
 
 ElunUIElements is available through [CocoaPods](http://cocoapods.org). To install
@@ -16,9 +14,37 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "IMReactiveTextField"
-pod 'ReactiveCocoa', '~> 5.0'
 
 ```
+If a compile error occurs, change the varibale value in the Atomic class within the ReactiveSwift pod
+
+```ruby
+
+internal struct UnsafeAtomicState<State: RawRepresentable>: AtomicStateProtocol where State.RawValue == Int32 {
+    internal typealias Transition = (expected: State, next: State)
+#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
+    private let value: UnsafeMutablePointer<Int32>
+
+ ..... 
+
+```
+
+change for 
+
+
+```ruby
+
+internal struct UnsafeAtomicState<State: RawRepresentable>: AtomicStateProtocol where State.RawValue == Int32 {
+    internal typealias Transition = (expected: State, next: State)
+#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
+    public let value: UnsafeMutablePointer<Int32>
+
+ ..... 
+
+```
+
+
+
 
 ## Example
 
