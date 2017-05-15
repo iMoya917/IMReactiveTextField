@@ -8,6 +8,6 @@ target 'IMReactiveTextField' do
 
   # Pods for IMReactiveTextField
   pod 'ReactiveCocoa', '~> 5.0'
-  #pod 'IMReactiveTextField', :path => '../'
+  pod 'IMReactiveTextField', :path => '../'
 
 end
