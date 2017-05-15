@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */; };
+		FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */; };
+		FE6FAF6D1ECA0A2300EDDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */; };
+		FE6FAF6F1ECA0A2300EDDFDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */; };
+		FE6FAF721ECA0A2300EDDFDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMReactiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE6FAF6C1ECA0A2300EDDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE6FAF711ECA0A2300EDDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE6FAF731ECA0A2300EDDFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE6FAF611ECA0A2300EDDFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE6FAF5B1ECA0A2300EDDFDB = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */,
+				FE6FAF651ECA0A2300EDDFDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE6FAF651ECA0A2300EDDFDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */,
+				FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */,
+				FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */,
+				FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */,
+				FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */,
+				FE6FAF731ECA0A2300EDDFDB /* Info.plist */,
+			);
+			path = IMReactiveTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE6FAF631ECA0A2300EDDFDB /* IMReactiveTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE6FAF761ECA0A2300EDDFDB /* Build configuration list for PBXNativeTarget "IMReactiveTextField" */;
+			buildPhases = (
+				FE6FAF601ECA0A2300EDDFDB /* Sources */,
+				FE6FAF611ECA0A2300EDDFDB /* Frameworks */,
+				FE6FAF621ECA0A2300EDDFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMReactiveTextField;
+			productName = IMReactiveTextField;
+			productReference = FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE6FAF5C1ECA0A2300EDDFDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Iván Alejandro Moya Quilodrán";
+				TargetAttributes = {
+					FE6FAF631ECA0A2300EDDFDB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P599CKGFG9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FE6FAF5F1ECA0A2300EDDFDB /* Build configuration list for PBXProject "IMReactiveTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE6FAF5B1ECA0A2300EDDFDB;
+			productRefGroup = FE6FAF651ECA0A2300EDDFDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE6FAF631ECA0A2300EDDFDB /* IMReactiveTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE6FAF621ECA0A2300EDDFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FAF721ECA0A2300EDDFDB /* LaunchScreen.storyboard in Resources */,
+				FE6FAF6F1ECA0A2300EDDFDB /* Assets.xcassets in Resources */,
+				FE6FAF6D1ECA0A2300EDDFDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE6FAF601ECA0A2300EDDFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */,
+				FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE6FAF6C1ECA0A2300EDDFDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE6FAF711ECA0A2300EDDFDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE6FAF741ECA0A2300EDDFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE6FAF751ECA0A2300EDDFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE6FAF771ECA0A2300EDDFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P599CKGFG9;
+				INFOPLIST_FILE = IMReactiveTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imoya.IMReactiveTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FE6FAF781ECA0A2300EDDFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P599CKGFG9;
+				INFOPLIST_FILE = IMReactiveTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imoya.IMReactiveTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE6FAF5F1ECA0A2300EDDFDB /* Build configuration list for PBXProject "IMReactiveTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FAF741ECA0A2300EDDFDB /* Debug */,
+				FE6FAF751ECA0A2300EDDFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE6FAF761ECA0A2300EDDFDB /* Build configuration list for PBXNativeTarget "IMReactiveTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE6FAF771ECA0A2300EDDFDB /* Debug */,
+				FE6FAF781ECA0A2300EDDFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE6FAF5C1ECA0A2300EDDFDB /* Project object */;
+}
