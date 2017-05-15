@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DEE34DF32776066A656AF18 /* Pods_IMReactiveTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */; };
 		FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */; };
 		FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */; };
 		FE6FAF6D1ECA0A2300EDDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */; };
 		FE6FAF6F1ECA0A2300EDDFDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */; };
 		FE6FAF721ECA0A2300EDDFDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */; };
+		FE6FAF7F1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF7E1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift */; };
+		FE6FAF811ECA0DCD00EDDFDB /* ValidateConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF801ECA0DCD00EDDFDB /* ValidateConditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C51FAD57C009F6DE4F7EDDC /* Pods-IMReactiveTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReactiveTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		7C1802C3186B5E669036CF30 /* Pods-IMReactiveTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReactiveTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField.release.xcconfig"; sourceTree = "<group>"; };
+		DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMReactiveTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMReactiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		FE6FAF6C1ECA0A2300EDDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6FAF711ECA0A2300EDDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE6FAF731ECA0A2300EDDFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6FAF7E1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveValidateTextField.swift; sourceTree = "<group>"; };
+		FE6FAF801ECA0DCD00EDDFDB /* ValidateConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateConditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEE34DF32776066A656AF18 /* Pods_IMReactiveTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CD985A1D56274EC3FBF772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C51FAD57C009F6DE4F7EDDC /* Pods-IMReactiveTextField.debug.xcconfig */,
+				7C1802C3186B5E669036CF30 /* Pods-IMReactiveTextField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB9B80F93387D4CFB1095F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE6FAF5B1ECA0A2300EDDFDB = {
 			isa = PBXGroup;
 			children = (
 				FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */,
 				FE6FAF651ECA0A2300EDDFDB /* Products */,
+				08CD985A1D56274EC3FBF772 /* Pods */,
+				DB9B80F93387D4CFB1095F92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,56 @@
 		FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */ = {
 			isa = PBXGroup;
 			children = (
+				FE6FAF7D1ECA0B6500EDDFDB /* Demo */,
+				FE6FAF791ECA0A7E00EDDFDB /* Classes */,
 				FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */,
-				FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */,
 				FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */,
 				FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */,
 				FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */,
 				FE6FAF731ECA0A2300EDDFDB /* Info.plist */,
 			);
 			path = IMReactiveTextField;
+			sourceTree = "<group>";
+		};
+		FE6FAF791ECA0A7E00EDDFDB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF7A1ECA0AC300EDDFDB /* ReactiveUITextField */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE6FAF7A1ECA0AC300EDDFDB /* ReactiveUITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF7B1ECA0AC300EDDFDB /* Conditions */,
+				FE6FAF7C1ECA0AC300EDDFDB /* UITextField */,
+			);
+			path = ReactiveUITextField;
+			sourceTree = "<group>";
+		};
+		FE6FAF7B1ECA0AC300EDDFDB /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF801ECA0DCD00EDDFDB /* ValidateConditions.swift */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		FE6FAF7C1ECA0AC300EDDFDB /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF7E1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		FE6FAF7D1ECA0B6500EDDFDB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE6FAF761ECA0A2300EDDFDB /* Build configuration list for PBXNativeTarget "IMReactiveTextField" */;
 			buildPhases = (
+				7B92994295F9D4318D0DCB9A /* [CP] Check Pods Manifest.lock */,
 				FE6FAF601ECA0A2300EDDFDB /* Sources */,
 				FE6FAF611ECA0A2300EDDFDB /* Frameworks */,
 				FE6FAF621ECA0A2300EDDFDB /* Resources */,
+				F339CBD7FF6DA326695057CC /* [CP] Embed Pods Frameworks */,
+				8A10EA305DB004EBADBAA3D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +205,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B92994295F9D4318D0DCB9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A10EA305DB004EBADBAA3D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F339CBD7FF6DA326695057CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE6FAF601ECA0A2300EDDFDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +260,8 @@
 			files = (
 				FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */,
 				FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */,
+				FE6FAF7F1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift in Sources */,
+				FE6FAF811ECA0DCD00EDDFDB /* ValidateConditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,26 +382,32 @@
 		};
 		FE6FAF771ECA0A2300EDDFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C51FAD57C009F6DE4F7EDDC /* Pods-IMReactiveTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P599CKGFG9;
 				INFOPLIST_FILE = IMReactiveTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imoya.IMReactiveTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		FE6FAF781ECA0A2300EDDFDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1802C3186B5E669036CF30 /* Pods-IMReactiveTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P599CKGFG9;
 				INFOPLIST_FILE = IMReactiveTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imoya.IMReactiveTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +431,7 @@
 				FE6FAF781ECA0A2300EDDFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

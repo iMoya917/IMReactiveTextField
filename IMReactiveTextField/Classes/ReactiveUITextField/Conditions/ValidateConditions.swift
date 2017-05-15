@@ -65,7 +65,7 @@ class ValidateConditions {
     func isAlphaNumeric(textString: String) -> Bool {
         
         var returnValue = true
-        let emailRegEx = "[^a-zA-Z0-9]"
+        let emailRegEx = "^[a-zA-Z0-9]+"
         
         do {
             let regex = try NSRegularExpression(pattern: emailRegEx)

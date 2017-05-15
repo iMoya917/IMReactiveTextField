@@ -7,12 +7,36 @@
 //
 
 import UIKit
+import ReactiveSwift
+import ReactiveCocoa
+import Result
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: ReactiveValidateTextField!
+    @IBOutlet weak var passTextField: ReactiveValidateTextField!
+    @IBOutlet weak var enableButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+    let signalEmail = emailTextField.signalReactiveTextField(typeCondition: .JLConditionTypeEmail)
+    let signalPass = passTextField.signalReactiveTextField(typeCondition: .JLConditionTypeAlphaNumeric)
+    
+        
+     _ = Signal.combineLatest(signalEmail, signalPass)
+        .map({ (emailCondition,passCondition) -> Bool in
+            
+            print("\(emailCondition) \(passCondition)")
+            return  emailCondition && passCondition})
+        .observeResult({ (response) in
+            self.enableButton.isEnabled = response.value!})
+        .flatMap { (disponseResult) -> Bool? in
+            self.enableButton.isEnabled = disponseResult.isDisposed
+            return disponseResult.isDisposed
+
+        }
     }
 
     override func didReceiveMemoryWarning() {

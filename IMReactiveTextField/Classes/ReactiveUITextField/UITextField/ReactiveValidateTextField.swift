@@ -31,14 +31,14 @@ class ReactiveValidateTextField: UITextField {
     @IBInspectable var minCharacter: NSInteger = 0
     @IBInspectable var maxCharacter: NSInteger = 0
     
-    @IBInspectable var backgroundError: UIColor?
-    @IBInspectable var backgroundDefault: UIColor?
+    @IBInspectable var errorBackground: UIColor?
+    @IBInspectable var defaultBackground: UIColor?
 
 
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = self.backgroundDefault
+        self.backgroundColor = self.defaultBackground
         
     }
     
@@ -99,7 +99,6 @@ class ReactiveValidateTextField: UITextField {
     
         
         signalWithCondition.observeResult { (response) in
-            print("value result \(response)")
             self.findTextState(response: response.value!)
         }
         
@@ -110,9 +109,9 @@ class ReactiveValidateTextField: UITextField {
     
     func findTextState(response : Bool) {
         if response{
-            self.backgroundColor = self.backgroundDefault
+            self.backgroundColor = self.defaultBackground
         }else{
-            self.backgroundColor = self.backgroundError
+            self.backgroundColor = self.errorBackground
         }
         
     }
