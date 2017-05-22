@@ -8,7 +8,6 @@ target 'IMReactiveTextField' do
 
   # Pods for IMReactiveTextField
   pod 'ReactiveCocoa', '~> 5.0'
-  pod 'RMRUTValidator'
   #pod 'IMReactiveTextField', :path => '../'
 
 end

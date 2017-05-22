@@ -21,6 +21,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        
+//        
+//        do{
+//            let validator = try FormValidator.validateRut(value: "17524882-K") //cambiar por string de rut a validar
+//            
+//        }catch RutError.InvalidRut(let message) {
+//            
+//            print("Error \(message)")
+//            
+//        }catch{
+//            
+//            print("an error ocurred during rut validation")
+//
+//        }
+
         
     let signalEmail = emailTextField.signalReactiveTextField(typeCondition: .JLConditionTypeEmail)
     let signalPass = passTextField.signalReactiveTextField(typeCondition: .JLConditionTypeAlphaNumeric)

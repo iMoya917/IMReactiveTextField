@@ -107,16 +107,7 @@ class ValidateConditions {
             return false
         }
 
-        var rutReplace = textString
-        
-        rutReplace = rutReplace.replacingOccurrences(of: ".", with: "")
-        rutReplace = rutReplace.replacingOccurrences(of: "-", with: "")
-        
-        if(rutReplace.characters.count <= 9){
-            return RMRUTValidator.validateRut(rutReplace)
-        }else{
-            return false
-        }
+         return RutValidator.validateRut(value: textString)
         
     }
     

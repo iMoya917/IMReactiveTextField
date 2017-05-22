@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DEE34DF32776066A656AF18 /* Pods_IMReactiveTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */; };
+		FE584C391ED397530035BC7E /* RutValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE584C381ED397530035BC7E /* RutValidator.swift */; };
 		FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */; };
 		FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */; };
 		FE6FAF6D1ECA0A2300EDDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */; };
@@ -22,7 +23,7 @@
 		7C1802C3186B5E669036CF30 /* Pods-IMReactiveTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReactiveTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField.release.xcconfig"; sourceTree = "<group>"; };
 		DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMReactiveTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE584C321ED37B1C0035BC7E /* RMRUTValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMRUTValidator.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IMReactiveTextField-esetdjudsgbtgmcxcmipghhywaqz/Build/Products/Debug-iphonesimulator/RMRUTValidator/RMRUTValidator.framework"; sourceTree = "<group>"; };
-		FE584C341ED383620035BC7E /* IMReactiveTextFieldSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMReactiveTextFieldSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE584C381ED397530035BC7E /* RutValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RutValidator.swift; sourceTree = "<group>"; };
 		FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMReactiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */ = {
 			isa = PBXGroup;
 			children = (
-				FE584C341ED383620035BC7E /* IMReactiveTextFieldSwift-Bridging-Header.h */,
 				FE6FAF7D1ECA0B6500EDDFDB /* Demo */,
 				FE6FAF791ECA0A7E00EDDFDB /* Classes */,
 				FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */,
@@ -118,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FE6FAF801ECA0DCD00EDDFDB /* ValidateConditions.swift */,
+				FE584C381ED397530035BC7E /* RutValidator.swift */,
 			);
 			path = Conditions;
 			sourceTree = "<group>";
@@ -262,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE584C391ED397530035BC7E /* RutValidator.swift in Sources */,
 				FE6FAF6A1ECA0A2300EDDFDB /* ViewController.swift in Sources */,
 				FE6FAF681ECA0A2300EDDFDB /* AppDelegate.swift in Sources */,
 				FE6FAF7F1ECA0DC500EDDFDB /* ReactiveValidateTextField.swift in Sources */,
