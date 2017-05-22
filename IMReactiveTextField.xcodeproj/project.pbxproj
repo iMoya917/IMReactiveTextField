@@ -21,8 +21,8 @@
 		1C51FAD57C009F6DE4F7EDDC /* Pods-IMReactiveTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReactiveTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField.debug.xcconfig"; sourceTree = "<group>"; };
 		7C1802C3186B5E669036CF30 /* Pods-IMReactiveTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReactiveTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMReactiveTextField/Pods-IMReactiveTextField.release.xcconfig"; sourceTree = "<group>"; };
 		DA45E803F51F958043FD472C /* Pods_IMReactiveTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMReactiveTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE446F281ED33D6F009BE0CC /* IMReactiveTextFieldSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IMReactiveTextFieldSwift-Bridging-Header.h"; path = "Classes/ReactiveUITextField/IMReactiveTextFieldSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE584C321ED37B1C0035BC7E /* RMRUTValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMRUTValidator.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IMReactiveTextField-esetdjudsgbtgmcxcmipghhywaqz/Build/Products/Debug-iphonesimulator/RMRUTValidator/RMRUTValidator.framework"; sourceTree = "<group>"; };
+		FE584C341ED383620035BC7E /* IMReactiveTextFieldSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMReactiveTextFieldSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE6FAF641ECA0A2300EDDFDB /* IMReactiveTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMReactiveTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6FAF691ECA0A2300EDDFDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -85,10 +85,10 @@
 		FE6FAF661ECA0A2300EDDFDB /* IMReactiveTextField */ = {
 			isa = PBXGroup;
 			children = (
+				FE584C341ED383620035BC7E /* IMReactiveTextFieldSwift-Bridging-Header.h */,
 				FE6FAF7D1ECA0B6500EDDFDB /* Demo */,
 				FE6FAF791ECA0A7E00EDDFDB /* Classes */,
 				FE6FAF671ECA0A2300EDDFDB /* AppDelegate.swift */,
-				FE446F281ED33D6F009BE0CC /* IMReactiveTextFieldSwift-Bridging-Header.h */,
 				FE6FAF6B1ECA0A2300EDDFDB /* Main.storyboard */,
 				FE6FAF6E1ECA0A2300EDDFDB /* Assets.xcassets */,
 				FE6FAF701ECA0A2300EDDFDB /* LaunchScreen.storyboard */,
