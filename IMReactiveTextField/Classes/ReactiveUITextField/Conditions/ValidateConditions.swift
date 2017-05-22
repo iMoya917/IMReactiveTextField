@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import RMRUTValidator
-
-
 class ValidateConditions {
     
     //MARK: emailValidation
