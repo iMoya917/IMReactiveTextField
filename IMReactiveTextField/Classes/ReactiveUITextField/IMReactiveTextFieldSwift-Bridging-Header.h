@@ -9,6 +9,6 @@
 #ifndef IMReactiveTextFieldSwift_Bridging_Header_h
 #define IMReactiveTextFieldSwift_Bridging_Header_h
 
-#import "RMRUTValidator.h"
+#import "RMRUTValidator/RMRUTValidator.h"
 
 #endif /* IMReactiveTextFieldSwift_Bridging_Header_h */
