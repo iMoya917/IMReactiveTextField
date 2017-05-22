@@ -16,6 +16,7 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.ios.deployment_target = '9.0'
   s.source_files = 'IMReactiveTextField/Classes/**/*'
  
+  s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'ReactiveCocoa', '5.0'
   s.dependency 'RMRUTValidator'
 
