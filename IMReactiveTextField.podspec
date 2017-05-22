@@ -16,7 +16,7 @@ This fantastic view changes its color gradually makes your app look fantastic!
   s.ios.deployment_target = '9.0'
   s.source_files = 'IMReactiveTextField/Classes/**/*'
 
-  s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'IMReactiveTextField/IMReactiveTextFieldSwift-Bridging-Header.h' } 
+  s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'IMReactiveTextFieldSwift-Bridging-Header.h' } 
   s.dependency 'ReactiveCocoa', '5.0'
   s.dependency 'RMRUTValidator'
 
