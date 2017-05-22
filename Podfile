@@ -7,8 +7,8 @@ target 'IMReactiveTextField' do
   use_frameworks!
 
   # Pods for IMReactiveTextField
-  pod 'ReactiveCocoa', '~> 5.0'
-  pod 'RMRUTValidator'
-  #pod 'IMReactiveTextField', :path => '../'
+  #pod 'ReactiveCocoa', '~> 5.0'
+  #pod 'RMRUTValidator'
+  pod 'IMReactiveTextField', :path => '../'
 
 end
