@@ -7,13 +7,17 @@
 //
 
 import UIKit
-
+import RMRUTValidator
 
 
 class ValidateConditions {
     
-    
+    //MARK: emailValidation
     func isValidEmailAddress(emailAddressString: String) -> Bool {
+        
+        if(emailAddressString.isEmpty){
+            return false
+        }
         
         var returnValue = true
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
@@ -36,8 +40,12 @@ class ValidateConditions {
         return  returnValue
     }
     
+    //MARK: alphabeticValidation
     func isAlphabetic(textString: String) -> Bool{
         
+        if(textString.isEmpty){
+            return false
+        }
         
         var returnValue = true
         let emailRegEx = "^[A-Za-z]+"
@@ -62,7 +70,12 @@ class ValidateConditions {
         
     }
     
+    //MARK: alphaNumericValidation
     func isAlphaNumeric(textString: String) -> Bool {
+        
+        if(textString.isEmpty){
+            return false
+        }
         
         var returnValue = true
         let emailRegEx = "^[a-zA-Z0-9]+"
@@ -86,6 +99,28 @@ class ValidateConditions {
 
         
     }
+    
+    //MARK: rutChileValidation
+    func isRutChile(textString: String) -> Bool {
+        
+        if(textString.isEmpty){
+            return false
+        }
+
+        var rutReplace = textString
+        
+        rutReplace = rutReplace.replacingOccurrences(of: ".", with: "")
+        rutReplace = rutReplace.replacingOccurrences(of: "-", with: "")
+        
+        if(rutReplace.characters.count <= 9){
+            return RMRUTValidator.validateRut(rutReplace)
+        }else{
+            return false
+        }
+        
+    }
+    
+
 
 
 }

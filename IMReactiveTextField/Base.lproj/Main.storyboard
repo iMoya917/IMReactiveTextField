@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -82,13 +82,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ingrese su rut" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TX1-ph-Tnh" customClass="ReactiveValidateTextField" customModule="IMReactiveTextField" customModuleProvider="target">
+                                <rect key="frame" x="20" y="143" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="v3M-o8-HFS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minCharacter">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="errorBackground">
+                                        <color key="value" red="1" green="0.15527727029999999" blue="0.2579402522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackground">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxCharacter">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3lW-L3-Q7d" firstAttribute="top" secondItem="TX1-ph-Tnh" secondAttribute="bottom" constant="25" id="05p-vf-jaR"/>
                             <constraint firstItem="Icf-Ea-inq" firstAttribute="top" secondItem="3lW-L3-Q7d" secondAttribute="bottom" constant="20" id="8Ka-Oy-wwn"/>
+                            <constraint firstItem="TX1-ph-Tnh" firstAttribute="leading" secondItem="3lW-L3-Q7d" secondAttribute="leading" id="Jeq-Vy-Gcd"/>
                             <constraint firstItem="Icf-Ea-inq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Nzu-Uv-uhM"/>
                             <constraint firstItem="3lW-L3-Q7d" firstAttribute="trailing" secondItem="Icf-Ea-inq" secondAttribute="trailing" id="U0h-24-t91"/>
                             <constraint firstItem="3lW-L3-Q7d" firstAttribute="leading" secondItem="Icf-Ea-inq" secondAttribute="leading" id="bBE-al-JkQ"/>
+                            <constraint firstItem="TX1-ph-Tnh" firstAttribute="trailing" secondItem="3lW-L3-Q7d" secondAttribute="trailing" id="bsq-My-3e4"/>
                             <constraint firstItem="3lW-L3-Q7d" firstAttribute="height" secondItem="Icf-Ea-inq" secondAttribute="height" id="heB-AO-3IG"/>
                             <constraint firstItem="u9f-BS-ibY" firstAttribute="top" secondItem="Icf-Ea-inq" secondAttribute="bottom" constant="30" id="hqZ-5I-Leq"/>
                             <constraint firstAttribute="trailing" secondItem="Icf-Ea-inq" secondAttribute="trailing" constant="20" id="idr-FK-f88"/>
@@ -100,6 +126,7 @@
                         <outlet property="emailTextField" destination="3lW-L3-Q7d" id="59y-HZ-dbY"/>
                         <outlet property="enableButton" destination="u9f-BS-ibY" id="5Tt-kn-IXg"/>
                         <outlet property="passTextField" destination="Icf-Ea-inq" id="BCn-ka-nMd"/>
+                        <outlet property="rutTextField" destination="TX1-ph-Tnh" id="Lgi-ZU-R0u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

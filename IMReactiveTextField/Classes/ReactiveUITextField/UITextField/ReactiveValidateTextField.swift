@@ -15,6 +15,7 @@ enum JLConditionType {
     case JLConditionTypeAlphabetic
     case JLConditionTypeEmail
     case JLConditionTypeAlphaNumeric
+    case JLConditionTypeRutChile
 }
 
 @IBDesignable
@@ -28,8 +29,16 @@ class ReactiveValidateTextField: UITextField {
     }
     */
     
-    @IBInspectable var minCharacter: NSInteger = 0
-    @IBInspectable var maxCharacter: NSInteger = 0
+    @IBInspectable var minCharacter: NSInteger = 0 {
+        willSet(newMinCharacter){
+            self.minCharacter = newMinCharacter
+        }
+    }
+    @IBInspectable var maxCharacter: NSInteger = 0 {
+        willSet(newMaxCharacter){
+            self.maxCharacter = newMaxCharacter
+        }
+    }
     
     @IBInspectable var errorBackground: UIColor?
     @IBInspectable var defaultBackground: UIColor?
@@ -94,8 +103,25 @@ class ReactiveValidateTextField: UITextField {
                         return condition.isAlphaNumeric(textString: textAlphabetic) && textAlphabetic.characters.count > self.minCharacter
                     }
                 })
+            
+        case .JLConditionTypeRutChile:
+            
+            signalWithCondition = self
+                .reactive
+                .continuousTextValues
+                .skipNil()
+                .map({ (textAlphabetic) -> Bool in
+
+                        if self.maxCharacter > 0{
+                            return   condition.isRutChile(textString: textAlphabetic) && textAlphabetic.characters.count > self.minCharacter && textAlphabetic.characters.count < self.maxCharacter
+                        }else{
+                            return  condition.isRutChile(textString: textAlphabetic) && textAlphabetic.characters.count > self.minCharacter
+                        }
+                        
+                })
      
         }
+        
     
         
         signalWithCondition.observeResult { (response) in

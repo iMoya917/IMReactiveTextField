@@ -13,6 +13,7 @@ import Result
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var rutTextField: ReactiveValidateTextField!
     @IBOutlet weak var emailTextField: ReactiveValidateTextField!
     @IBOutlet weak var passTextField: ReactiveValidateTextField!
     @IBOutlet weak var enableButton: UIButton!
@@ -23,13 +24,13 @@ class ViewController: UIViewController {
         
     let signalEmail = emailTextField.signalReactiveTextField(typeCondition: .JLConditionTypeEmail)
     let signalPass = passTextField.signalReactiveTextField(typeCondition: .JLConditionTypeAlphaNumeric)
-    
+    let signalRut = rutTextField.signalReactiveTextField(typeCondition: .JLConditionTypeRutChile)
         
-     _ = Signal.combineLatest(signalEmail, signalPass)
-        .map({ (emailCondition,passCondition) -> Bool in
+     _ = Signal.combineLatest(signalEmail, signalPass, signalRut)
+        .map({ (emailCondition,passCondition, rutCondition) -> Bool in
             
             print("\(emailCondition) \(passCondition)")
-            return  emailCondition && passCondition})
+            return  emailCondition && passCondition && rutCondition})
         .observeResult({ (response) in
             self.enableButton.isEnabled = response.value!})
         .flatMap { (disponseResult) -> Bool? in
